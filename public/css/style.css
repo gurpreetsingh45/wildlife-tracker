@@ -1,4 +1,78 @@
-body{
-    background-color: black;
-    color: white;
+body,
+h1,
+h4,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 2rem 15rem;
+  padding-bottom: 1rem;
+  padding-left: 10rem;
+  font-size: 17pt;
+  /* margin-bottom: 20rem; */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+header p {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header h1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+main {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+  /* width: 100%; */
+  padding: 2rem 10rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#main-container{
+    display: flex;
+    border-radius: 2em;
+    background: white;
+}
+
+#myIMG {
+  border-radius: 50%;
+  border: solid medium green;
+  height: 20rem;
+}
+
+#about-section{
+    
+}
+
+#about-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+#about-content-text {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 1.2rem;
 }
