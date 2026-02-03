@@ -4,44 +4,153 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wildlife Sighting Tracker</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <header>
-      <h1>🦅 Wildlife Sighting Tracker</h1>
-      <p>Documenting Canada's Amazing Wildlife</p>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="header-title">🦅 Wildlife Tracker</h1>
+        <p class="header-subtitle">Documenting Canada's Amazing Wildlife</p>
+      </div>
     </header>
+
     <main>
-      <div id="main-container">
-        <section id="about-section">
-          <h2>About Me</h2>
-          <div id="about-content">
-            <img id="myIMG" src="/images/mouseinwar.jpg" alt="not my image" />
-            <div id="about-content-text">
-              <h4>Hi Im Gurpreet</h4>
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image">
+              <img src="/images/mouseinwar.jpg" alt="Wildlife in nature" />
+            </div>
+            <div class="about-text">
+              <h2>About Me</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium delectus a architecto soluta dolor non enim dicta
-                mollitia asperiores earum. Ex accusamus amet dolore, esse, error
-                perferendis officiis assumenda non quidem consequatur beatae
-                laborum, quia quas! Officiis doloremque quae saepe.
-              </p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis quae labore odit nobis, neque culpa, eveniet
-                quibusdam fugit aperiam possimus esse quaerat mollitia
-                accusamus? Repellat laboriosam rerum facere officiis recusandae?
+                I'm a WEB322 student passionate about creating meaningful
+                applications that connect people with nature. When I'm not
+                coding, you can find me playing games, sports, or exploring
+                Canada. I built this Wildlife Sighting Tracker as part of my
+                journey to master modern JavaScript and backend development.
+                This project combines my love for wildlife with my growing
+                skills in Node.js and Express.js.
               </p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
+      <!-- About Project Section -->
+      <section class="about-project-section">
+        <div class="container">
+          <h2>About This Project</h2>
+          <p class="section-description">
+            The Wildlife Sighting Tracker is a web application designed to
+            manage and explore wildlife observation data from across Canada.
+            Built with Express.js, it provides a RESTful API to query sightings
+            by species, habitat, verification status, and more.
+          </p>
+
+          <div class="cards-grid three-cards">
+            <div class="card">
+              <div class="card-icon">🔍</div>
+              <h3>Search & Filter</h3>
+              <p>Find specific species and filter by habitat type</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">📊</div>
+              <h3>Statistics</h3>
+              <p>View comprehensive analytics on wildlife observations</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">✅</div>
+              <h3>Verification</h3>
+              <p>Track verified vs unverified sightings</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- API Endpoints Section -->
+      <section class="features-section">
+        <div class="container">
+          <h2>Available API Endpoints</h2>
+
+          <div class="cards-grid seven-cards">
+            <div class="card">
+              <div class="card-icon">GET</div>
+              <h3>/api/sightings</h3>
+              <p>Retrieve all wildlife sighting</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">GET</div>
+              <h3>/api/sightings/verified</h3>
+              <p>Get only verified sighting</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">GET</div>
+              <h3>/api/species/species-list</h3>
+              <p>List all unique species names</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">GET</div>
+              <h3> /api/sightings/habitat/forest</h3>
+              <p>Find all sightings in forest habitats</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">GET</div>
+              <h3>/api/sightings/search/eagle</h3>
+              <p>Search for eagle sightings</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">GET</div>
+              <h3> /api/sightings/find-index/moose</h3>
+              <p>Get index position of moose sighting</p>
+            </div>
+
+            <div class="card">
+              <div class="card-icon">GET</div>
+              <h3> /api/sightings/recent</h3>
+              <p>Get 3 most recent sightings</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Wildlife Tracker</h4>
+            <p>Protecting wildlife through technology and community.</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Technologies Used</h4>
+            <ul>
+              <li>Node.js - JavaScript runtime</li>
+              <li>Express.js - Web framework</li>
+              <li>HTML5 & CSS3 - Frontend</li>
+              <li>JSON - Data storage</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; Gurpreet Singh | 03-02-2026 | Wildlife Sighting Tracker |
+            Built with ❤️ and Express.js
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
