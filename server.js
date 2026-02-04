@@ -85,6 +85,4 @@ app.get('/api/sightings/recent', async (req, res) => {
     res.json(recentSightings);
 });
 
-if (require.main === module) {
-    app.listen(HTTP_PORT, () => console.log(`listening to port ${HTTP_PORT}`));
-}
+app.listen(HTTP_PORT, () => console.log(`listening to port ${HTTP_PORT}`));
