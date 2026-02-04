@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <!-- Header -->
+        <!-- Header -->
     <header class="header">
       <div class="container">
         <h1 class="header-title">🦅 Wildlife Tracker</h1>
@@ -21,10 +21,10 @@
         <div class="container">
           <div class="about-content">
             <div class="about-image">
-              <img src="/images/mouseinwar.jpg" alt="Wildlife in nature" />
+              <img src="/images/gurpreetSingh.jpg" alt="Wildlife in nature" />
             </div>
             <div class="about-text">
-              <h2>About Me</h2>
+              <h2>Hi, I'm Gurpreet! 👋</h2>
               <p>
                 I'm a WEB322 student passionate about creating meaningful
                 applications that connect people with nature. When I'm not
@@ -76,47 +76,78 @@
       <section class="features-section">
         <div class="container">
           <h2>Available API Endpoints</h2>
+          <p style="text-align: center; color: #666; margin-bottom: 20px">
+            Click on any card to view the JSON response
+          </p>
 
           <div class="cards-grid seven-cards">
-            <div class="card">
+            <div
+              class="card"
+              style="cursor: pointer"
+              onclick="window.location.href = '/api/sightings'"
+            >
               <div class="card-icon">GET</div>
               <h3>/api/sightings</h3>
               <p>Retrieve all wildlife sighting</p>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              style="cursor: pointer"
+              onclick="window.location.href = '/api/sightings/verified'"
+            >
               <div class="card-icon">GET</div>
               <h3>/api/sightings/verified</h3>
               <p>Get only verified sighting</p>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              style="cursor: pointer"
+              onclick="window.location.href = '/api/sightings/species-list'"
+            >
               <div class="card-icon">GET</div>
-              <h3>/api/species/species-list</h3>
+              <h3>/api/sightings/species-list</h3>
               <p>List all unique species names</p>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              style="cursor: pointer"
+              onclick="window.location.href = '/api/sightings/habitat/forest'"
+            >
               <div class="card-icon">GET</div>
-              <h3> /api/sightings/habitat/forest</h3>
+              <h3>/api/sightings/habitat/forest</h3>
               <p>Find all sightings in forest habitats</p>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              style="cursor: pointer"
+              onclick="window.location.href = '/api/sightings/search/eagle'"
+            >
               <div class="card-icon">GET</div>
               <h3>/api/sightings/search/eagle</h3>
               <p>Search for eagle sightings</p>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              style="cursor: pointer"
+              onclick="window.location.href = '/api/sightings/find-index/moose'"
+            >
               <div class="card-icon">GET</div>
-              <h3> /api/sightings/find-index/moose</h3>
+              <h3>/api/sightings/find-index/moose</h3>
               <p>Get index position of moose sighting</p>
             </div>
 
-            <div class="card">
+            <div
+              class="card"
+              style="cursor: pointer"
+              onclick="window.location.href = '/api/sightings/recent'"
+            >
               <div class="card-icon">GET</div>
-              <h3> /api/sightings/recent</h3>
+              <h3>/api/sightings/recent</h3>
               <p>Get 3 most recent sightings</p>
             </div>
           </div>

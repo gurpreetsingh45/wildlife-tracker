@@ -10,7 +10,6 @@ Thumbs.db
 
 # Editor
 .vscode/
-.idea/
 
 # Vercel
 .vercel
