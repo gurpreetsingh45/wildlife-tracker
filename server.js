@@ -1,3 +1,14 @@
+/********************************************************************************
+* WEB322 - Assignment 01
+*
+* I declare that this assignment is my own work in accordance with Seneca's
+* Academic Integrity Policy:
+*
+* https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+*
+* Name: Gurpreet Singh    Student ID: 143124246    Date: 03-02-2026
+*
+********************************************************************************/
 const express = require('express');
 const path = require('path');
 const { loadSightings } = require('./utils/dataLoader');
